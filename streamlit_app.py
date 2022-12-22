@@ -16,7 +16,7 @@ def run_query():
     with server.auth.sign_in(tableau_auth):
         workbooks, pagination_item = server.workbooks.get()
         for w in workbooks:
-            if w.name == 'trydashboard':
+            if w.name == 'ourworkbook':
                 our_workbook = w
                 break
 # Get views for BHARAT_REFINERY_DASHBOARD_FINAL workbook.
@@ -30,5 +30,5 @@ def run_query():
     server.views.populate_image(our_view)
     view_image = our_view.image
     return view_image
-view_image = run_query('1_Demand_&_Supply')
+view_image = run_query('MyDash')
 st.image(view_image, width=800)
