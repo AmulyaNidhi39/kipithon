@@ -23,8 +23,8 @@ def run_query():
         server.workbooks.populate_views(our_workbook)
         for v in our_workbook.views:
             if view_name == v.name:
-            our_view = v
-            break
+                our_view = v
+                break
 st.subheader(":notebook: Workbooks")
 st.write("Found the following workbooks:", ", ".join(our_workbook))
     #Get an image for the view.
