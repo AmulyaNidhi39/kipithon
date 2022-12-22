@@ -1,2 +1,2 @@
 # requirements.txt
-tableauserverclient==0.8.1
+tableauserverclient==2.3
