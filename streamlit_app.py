@@ -30,5 +30,5 @@ def run_query():
     server.views.populate_image(our_view)
     view_image = our_view.image
     return view_image
-view_image = run_query("1_Demand_&_Supply')
+view_image = run_query('1_Demand_&_Supply')
 st.image(view_image, width=800)
