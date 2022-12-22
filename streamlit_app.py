@@ -12,7 +12,7 @@ server = TSC.Server(server_url, use_server_version=True)
 # Explore the tableauserverclient library for more options.
 # Uses st.experimental_memo to only rerun when the query changes or after 10 min.
 @st.experimental_memo(ttl=600)
-def run_query():
+def run_query(view_name):
     with server.auth.sign_in(tableau_auth):
         workbooks, pagination_item = server.workbooks.get()
         for w in workbooks:
