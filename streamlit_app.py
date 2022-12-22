@@ -25,11 +25,10 @@ def run_query():
             if view_name == v.name:
                 our_view = v
                 break
-st.subheader(":notebook: Workbooks")
-st.write("Found the following workbooks:", ", ".join(our_workbook))
+
     #Get an image for the view.
-    #server.views.populate_image(our_view)
-    #view_image = our_view.image
-    #return view_image
-#view_image = run_query("1_Demand_&_Supply')
-#st.image(view_image, width=800)
+    server.views.populate_image(our_view)
+    view_image = our_view.image
+    return view_image
+view_image = run_query("1_Demand_&_Supply')
+st.image(view_image, width=800)
