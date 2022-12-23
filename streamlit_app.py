@@ -20,8 +20,8 @@ def add_bg_from_url():
 
 add_bg_from_url() 
 
-usernames = ['jsmith','rbriggs']
-passwords = ['123','456']
+usernames = ['user1','user2']
+passwords = ['streamlit123','mypass']
 hashed_passwords = stauth.hasher(passwords).generate()
 authenticator = stauth.authenticate(names,usernames,hashed_passwords,'cookie_name', 'signature_key',cookie_expiry_days=30)
 name, authentication_status = authenticator.login('Login','sidebar')
