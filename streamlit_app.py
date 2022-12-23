@@ -1,6 +1,5 @@
 import streamlit as st
 import tableauserverclient as TSC
-import streamlit_authenticator as stauth
 
 # streamlit_app.py
 
