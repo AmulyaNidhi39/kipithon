@@ -55,7 +55,7 @@ def check_password():
         return True
 
 if check_password():
-    if username == user1:
+    if st.session_state["username"] == user1:
         server_url = 'https://prod-useast-a.online.tableau.com'
         user = 'amulya.s.nidhi@kipi.bi'
         password = 'Kipithon@123'
@@ -87,7 +87,7 @@ if check_password():
                 return view_image
         view_image = run_query('MyDash')
         st.image(view_image, width=800)
-    elif username == user2:
+    elif st.session_state["username"] == user2:
         server_url = 'https://prod-useast-a.online.tableau.com'
         user = 'amulya.s.nidhi@kipi.bi'
         password = 'Kipithon@123'
