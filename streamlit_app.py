@@ -29,6 +29,6 @@ if authentication_status:
     st.write(name)
  # your application
 elif authentication_status == False:
-    st.error(‘Username and password is incorrect’)
+    st.error(‘Usernames and passwords are incorrect’)
 elif authentication_status == None:
     st.warning(‘Please enter your username and password’)
