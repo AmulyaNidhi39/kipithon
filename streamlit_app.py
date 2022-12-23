@@ -2,15 +2,6 @@ import streamlit as st
 import tableauserverclient as TSC
 
 # streamlit_app.py
-
-m = st.markdown("""
-<style>
-height: 100%;
-}
-body {
-background-image: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));
-</style>""", unsafe_allow_html=True)
-
 def check_password():
     """Returns `True` if the user had a correct password."""
 
