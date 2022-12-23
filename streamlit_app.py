@@ -2,6 +2,23 @@ import streamlit as st
 import tableauserverclient as TSC
 
 # streamlit_app.py
+
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.squadhelp.com%2Fname%2FKipi.io&psig=AOvVaw0yFydOXdeNx3xefTIjP5kc&ust=1671876128783000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOCrx4y-j_wCFQAAAAAdAAAAABAE");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url() 
+
 def check_password():
     """Returns `True` if the user had a correct password."""
 
