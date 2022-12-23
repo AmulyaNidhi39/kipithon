@@ -8,7 +8,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.squadhelp.com%2Fname%2FKipi.io&psig=AOvVaw0yFydOXdeNx3xefTIjP5kc&ust=1671876128783000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOCrx4y-j_wCFQAAAAAdAAAAABAE");
+             background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F183-1831875_career-opportunities-for-computer-hardware-servicing-hd-png.png&imgrefurl=https%3A%2F%2Fwww.kindpng.com%2Ffree%2Fcomputer-repair%2F&tbnid=F8PDLesC88rNJM&vet=12ahUKEwjijeONv4_8AhW8j9gFHXZIAbsQMygJegQIARA3..i&docid=Eyz6oJ1NWqEvYM&w=302&h=280&q=kipi%20img%20.png&ved=2ahUKEwjijeONv4_8AhW8j9gFHXZIAbsQMygJegQIARA3");
              background-attachment: fixed;
              background-size: cover
          }}
