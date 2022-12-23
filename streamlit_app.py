@@ -55,6 +55,7 @@ def check_password():
         return True
 
 if check_password():
+    username= user1
     if st.session_state["username"] == user1:
         server_url = 'https://prod-useast-a.online.tableau.com'
         user = 'amulya.s.nidhi@kipi.bi'
