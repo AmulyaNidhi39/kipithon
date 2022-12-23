@@ -3,11 +3,15 @@ import tableauserverclient as TSC
 
 # streamlit_app.py
 
-<style>
-p {
- background-image: url(‘snow.png’);
-}
-</style>
+st.markdown(
+   f”””
+   <style>
+   p {
+   background-image: url(‘img_file.jpg’);
+   }
+   </style>
+   ”””,
+   unsafe_allow_html=True)
 
 def check_password():
     """Returns `True` if the user had a correct password."""
