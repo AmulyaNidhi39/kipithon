@@ -1,2 +1,6 @@
 # requirements.txt
 tableauserverclient==0.8.1
+
+snowflake-connector-python
+streamlit_option_menu
+pandas
