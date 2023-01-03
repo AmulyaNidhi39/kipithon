@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 # streamlit_app.py
 
 with st.sidebar:
-    choose = option_menu("App Gallery", ['Tableau', 'ML'])
+    choose = option_menu("App Gallery", ['Tableau'])
 
 if choose == 'Tableau':
     def check_password():
@@ -110,5 +110,4 @@ if choose == 'Tableau':
             st.image(view_image, width=800)
         else:
             st.print("zz")
-elif choose=='ML':
-    print("kk")
+
