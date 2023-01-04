@@ -26,7 +26,7 @@ elif choose == 'ML':
     st.title("FOREX Forecasting Models Monitoring")
     add_selectbox = st.selectbox(
     "How would you like to be contacted?",
-    ('usd','xyz')
+    ('usd','xyz','abc')
     )
     if add_selectbox=='usd':
 
@@ -194,7 +194,8 @@ elif add_selectbox=='xyz':
 
         st.line_chart(df, x="date",
            y=["Actual", "Prediction"])
-    
+else:
+    st.write('hello')
 elif choose == 'TABLEAU':
     def check_password():
         """Returns `True` if the user had a correct password."""
