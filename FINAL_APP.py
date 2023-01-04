@@ -12,10 +12,9 @@ import numpy as np
 # Using "with" notation
 with st.sidebar:
     choose = option_menu("TRADERS CENTRAL", ['HOME','ML','TABLEAU'])
-    
+st.write('Welcome to Traders Central')
 if choose =='HOME':
-    st.write('Welcome to Traders Central')
-    image = Image.open('imagest.PNG')  
+  image = Image.open('imagest.PNG')  
 elif choose == 'ML':
     # set_page_config needs to be the first Streamlit command in your script
     st.title("FOREX Forecasting Models Monitoring")
