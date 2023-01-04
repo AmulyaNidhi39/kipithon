@@ -23,6 +23,7 @@ elif choose == 'ML':
     "Choose your Currency Pair",
     ('INR-USD','EURO-USD','USD-CAD')
     )
+    st.write('The prediction for the next 5 days:')
     if add_selectbox=='INR-USD':
 
         # Initialize connection.
