@@ -15,7 +15,7 @@ with st.sidebar:
     
 if choose =='HOME':
     st.write('Welcome to Traders Central')
-  image = Image.open('imagest.PNG')  
+    image = Image.open('imagest.PNG')  
 elif choose == 'ML':
     # set_page_config needs to be the first Streamlit command in your script
     st.title("FOREX Forecasting Models Monitoring")
