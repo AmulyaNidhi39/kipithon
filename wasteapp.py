@@ -1,5 +1,6 @@
 import streamlit as st
 import tableauserverclient as TSC
+from PIL import Image
 from streamlit_option_menu import option_menu
 import plotly.express as px
 import snowflake.connector
@@ -7,21 +8,16 @@ import snowflake.connector
 import pandas as pd
 import numpy as np
 
-# Using object notation
-add_selectbox = st.sidebar.selectbox(
-    "How would you like to be contacted?",
-    ("Dash", "Home phone", "Mobile phone")
-)
+
 
 # Using "with" notation
 with st.sidebar:
-    choose = option_menu("TRADERS CENTRAL", ['ML','TABLEAU'])
-    add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
-    )
-
-if choose == 'ML':
+    choose = option_menu("TRADERS CENTRAL", ['HOME','ML','TABLEAU'])
+    
+if choose =='HOME':
+  image = Image.open('snow.jpg')
+  st.image(image, caption='Sunrise by the mountains')  
+elif choose == 'ML':
     # set_page_config needs to be the first Streamlit command in your script
     st.title("FOREX Forecasting Models Monitoring")
 
