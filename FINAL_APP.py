@@ -13,7 +13,7 @@ import numpy as np
 with st.sidebar:
     choose = option_menu("TRADERS CENTRAL", ['HOME','ML','TABLEAU'])
 if choose =='HOME':
-    new_title = '<p style="font-family:sans-serif; color:#ADD8E6; font-size: 39px;">WELCOME TO TRADERS CENTRAL</p>'
+    new_title = '<p style="font-family:sans-serif; color:#ADD8E6; font-size: 40px;">WELCOME TO TRADERS CENTRAL</p>'
     st.markdown(new_title, unsafe_allow_html=True)
     image = Image.open('imagest.PNG')
     st.image(image)
