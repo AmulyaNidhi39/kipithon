@@ -13,6 +13,7 @@ import numpy as np
 with st.sidebar:
     choose = option_menu("TRADERS CENTRAL", ['HOME','ML','TABLEAU'])
 if choose =='HOME':
+    st.write('WELCOME TO TRADERS CENTRAL')
     image = Image.open('imagest.PNG')
     st.image(image)
 elif choose == 'ML':
