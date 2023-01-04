@@ -24,7 +24,10 @@ if choose =='HOME':
 elif choose == 'ML':
     # set_page_config needs to be the first Streamlit command in your script
     st.title("FOREX Forecasting Models Monitoring")
-    with st.sidebar.selectbox('usd'):
+    add_selectbox = st.selectbox(
+    "How would you like to be contacted?",
+    ('usd','xyz')
+    )
       
 
         # Initialize connection.
