@@ -21,7 +21,6 @@ with st.sidebar:
 
 
 # set_page_config needs to be the first Streamlit command in your script
-st.set_page_config(layout="wide")
 st.title("FOREX Forecasting Models Monitoring")
 
 # Initialize connection.
