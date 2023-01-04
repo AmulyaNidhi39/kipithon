@@ -112,7 +112,7 @@ elif choose == 'ML':
         st.line_chart(df, x="date",
            y=["Actual", "Prediction"])
 
-elif add_selectbox=='xyz':
+    elif add_selectbox=='xyz':
     # Initialize connection.
         # Uses st.experimental_singleton to only run once.
         @st.experimental_singleton
@@ -194,8 +194,8 @@ elif add_selectbox=='xyz':
 
         st.line_chart(df, x="date",
            y=["Actual", "Prediction"])
-else:
-    st.write('hello')
+    else:
+        st.write('hello')
 elif choose == 'TABLEAU':
     def check_password():
         """Returns `True` if the user had a correct password."""
