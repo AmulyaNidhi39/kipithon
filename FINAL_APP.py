@@ -24,7 +24,9 @@ elif choose == 'ML':
     "Choose your Currency Pair",
     ('INR-USD','EURO-USD','USD-CAD')
     )
-    st.write('The prediction for the next 5 days:')
+    new_title1 = '<p style="font-family:sans-serif; color:#FFFFFF; font-size: 25px;"><b>The prediction for the next 5 days:</b></p>'
+    st.markdown(new_title1, unsafe_allow_html=True)
+    #st.write('The prediction for the next 5 days:')
     if add_selectbox=='INR-USD':
 
         # Initialize connection.
