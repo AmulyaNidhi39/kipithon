@@ -14,5 +14,5 @@ with st.sidebar:
         ("Standard (5-15 days)", "Express (2-5 days)")
     )
 
-image = Image.open('sunrise.jpg')
+image = Image.open('ARCH1.png')
 st.image(image, caption='Sunrise by the mountains')
