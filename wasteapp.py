@@ -8,11 +8,6 @@ import snowflake.connector
 import pandas as pd
 import numpy as np
 
-# Using object notation
-add_selectbox = st.sidebar.selectbox(
-    "How would you like to be contacted?",
-    ("usd")
-)
 
 # Using "with" notation
 with st.sidebar:
@@ -25,7 +20,7 @@ elif choose == 'ML':
     # set_page_config needs to be the first Streamlit command in your script
     st.title("FOREX Forecasting Models Monitoring")
     add_selectbox = st.selectbox(
-    "How would you like to be contacted?",
+    "Choose your Currency Pair",
     ('usd','xyz','abc')
     )
     if add_selectbox=='usd':
