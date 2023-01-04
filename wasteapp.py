@@ -1,5 +1,9 @@
 import streamlit as st
-from PIL import Image
+import plotly.express as px
+import snowflake.connector
+
+import pandas as pd
+import numpy as np
 
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
@@ -14,12 +18,6 @@ with st.sidebar:
         ("Standard (5-15 days)", "Express (2-5 days)")
     )
 
-import streamlit as st
-import plotly.express as px
-import snowflake.connector
-
-import pandas as pd
-import numpy as np
 
 
 # set_page_config needs to be the first Streamlit command in your script
