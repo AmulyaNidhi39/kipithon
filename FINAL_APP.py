@@ -313,7 +313,7 @@ elif choose == 'TABLEAU':
     
     if check_password():
         if st.session_state["username"] == 'Craig':
-            server_url = 'https://prod-apnortheast-a.online.tableau.com'
+            server_url = 'https://prod-apnortheast-a.online.tableau.com/'
             user = 'panga.r.karthik@kipi.bi'
             password = 'Kipithon@123'
             site = 'Site22'
@@ -345,7 +345,7 @@ elif choose == 'TABLEAU':
             view_image = run_query('Craig Dashboard')
             st.image(view_image, width=800)
         elif st.session_state["username"] == 'Jhony':
-            server_url = 'https://prod-apnortheast-a.online.tableau.com'
+            server_url = 'https://prod-apnortheast-a.online.tableau.com/'
             user = 'panga.r.karthik@kipi.bi'
             password = 'Kipithon@123'
             site = 'Site22'
