@@ -342,7 +342,7 @@ elif choose == 'TABLEAU':
                     server.views.populate_image(our_view)
                     view_image = our_view.image
                     return view_image
-            view_image = run_query('Craig Dashboard')
+            view_image = run_query('CraigDashboard')
             st.image(view_image, width=800)
         elif st.session_state["username"] == 'user2':
             server_url = 'https://prod-apnortheast-a.online.tableau.com'
