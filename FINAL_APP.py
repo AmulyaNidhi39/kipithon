@@ -313,10 +313,10 @@ elif choose == 'TABLEAU':
     
     if check_password():
         if st.session_state["username"] == 'user1':
-            server_url = 'https://prod-useast-a.online.tableau.com'
-            user = 'amulya.s.nidhi@kipi.bi'
+            server_url = 'https://prod-apnortheast-a.online.tableau.com'
+            user = 'panga.r.karthik@kipi.bi'
             password = 'Kipithon@123'
-            site = 'Site21'
+            site = 'Site22'
             tableau_auth = TSC.TableauAuth(username=user, password=password, site_id=site)
             server = TSC.Server(server_url, use_server_version=True)
 
@@ -328,7 +328,7 @@ elif choose == 'TABLEAU':
                 with server.auth.sign_in(tableau_auth):
                     workbooks, pagination_item = server.workbooks.get()
                     for w in workbooks:
-                        if w.name == 'ourworkbook':
+                        if w.name == 'Craig':
                             our_workbook = w
                             break
             # Get views for BHARAT_REFINERY_DASHBOARD_FINAL workbook.
@@ -342,13 +342,13 @@ elif choose == 'TABLEAU':
                     server.views.populate_image(our_view)
                     view_image = our_view.image
                     return view_image
-            view_image = run_query('MyDash')
+            view_image = run_query('Craig Dashboard')
             st.image(view_image, width=800)
         elif st.session_state["username"] == 'user2':
-            server_url = 'https://prod-useast-a.online.tableau.com'
-            user = 'amulya.s.nidhi@kipi.bi'
+            server_url = 'https://prod-apnortheast-a.online.tableau.com'
+            user = 'panga.r.karthik@kipi.bi'
             password = 'Kipithon@123'
-            site = 'Site21'
+            site = 'Site22'
             tableau_auth = TSC.TableauAuth(username=user, password=password, site_id=site)
             server = TSC.Server(server_url, use_server_version=True)
 
@@ -360,7 +360,7 @@ elif choose == 'TABLEAU':
                 with server.auth.sign_in(tableau_auth):
                     workbooks, pagination_item = server.workbooks.get()
                     for w in workbooks:
-                        if w.name == 'ourworkbook':
+                        if w.name == 'Jhony':
                             our_workbook = w
                             break
             # Get views for BHARAT_REFINERY_DASHBOARD_FINAL workbook.
@@ -374,7 +374,7 @@ elif choose == 'TABLEAU':
                     server.views.populate_image(our_view)
                     view_image = our_view.image
                     return view_image
-            view_image = run_query('newdash')
+            view_image = run_query('Jhony Dashboard')
             st.image(view_image, width=800)
         else:
             st.print("Bye!")
