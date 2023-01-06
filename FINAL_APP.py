@@ -119,7 +119,7 @@ elif choose == 'ML':
 
 
         #actual=run_query("select ACTUAL from ACTVSPREC limit 5;")
-        prediction=run_query("select PREDICTIONS from ACTVSPRECEURO limit 5;")
+        prediction=run_query("select PREDICTION from ACTVSPRECEURO limit 5;")
         date=run_query("select DDATE from ACTVSPRECEURO limit 5 ;")
 
 
@@ -182,7 +182,7 @@ elif choose == 'ML':
 
 
         #actual=run_query("select ACTUAL from ACTVSPREC limit 5;")
-        prediction=run_query("select PREDICTIONS from ACTVSPRECAD limit 5;")
+        prediction=run_query("select PREDICTION from ACTVSPRECAD limit 5;")
         date=run_query("select DDATE from ACTVSPRECAD limit 5 ;")
 
 
