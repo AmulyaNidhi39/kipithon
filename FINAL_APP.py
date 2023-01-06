@@ -69,26 +69,7 @@ elif choose == 'ML':
          #   np.random.randn(20, 3),
          #   columns=['a', 'b', 'c'])
 
-        #st.line_chart(rows)
-        line_fig = px.line(
-           df2,
-           x="date",
-           y=["actual", "prediction"],
-           title="Actual Values vs Forecasted values",
-
-            )
-        #legend_names = {"sales": "Actual Sales", "sales_forecast": "Forecasted Sales"}
-        line_fig.update_layout(
-           xaxis=dict(showgrid=False),
-           legend=dict(
-               yanchor="top",
-               y=0.99,
-               xanchor="right",
-               x=0.99
-           ),
-           title_x=0.5,
-           height=600
-            )
+       
 
         # passing in the Plotly graph object to Streamlit
         #st.plotly_chart(line_fig, use_container_width=True)
@@ -152,26 +133,7 @@ elif choose == 'ML':
          #   np.random.randn(20, 3),
          #   columns=['a', 'b', 'c'])
 
-        #st.line_chart(rows)
-        line_fig = px.line(
-           df3,
-           x="date",
-           y=["actual", "prediction"],
-           title="Actual Values vs Forecasted values",
-
-            )
-        #legend_names = {"sales": "Actual Sales", "sales_forecast": "Forecasted Sales"}
-        line_fig.update_layout(
-           xaxis=dict(showgrid=False),
-           legend=dict(
-               yanchor="top",
-               y=0.99,
-               xanchor="right",
-               x=0.99
-           ),
-           title_x=0.5,
-           height=600
-            )
+        
 
         # passing in the Plotly graph object to Streamlit
         #st.plotly_chart(line_fig, use_container_width=True)
@@ -234,26 +196,7 @@ elif choose == 'ML':
          #   np.random.randn(20, 3),
          #   columns=['a', 'b', 'c'])
 
-        #st.line_chart(rows)
-        line_fig = px.line(
-           df4,
-           x="date",
-           y=["actual", "prediction"],
-           title="Actual Values vs Forecasted values",
-
-            )
-        #legend_names = {"sales": "Actual Sales", "sales_forecast": "Forecasted Sales"}
-        line_fig.update_layout(
-           xaxis=dict(showgrid=False),
-           legend=dict(
-               yanchor="top",
-               y=0.99,
-               xanchor="right",
-               x=0.99
-           ),
-           title_x=0.5,
-           height=600
-            )
+        
 
         # passing in the Plotly graph object to Streamlit
         #st.plotly_chart(line_fig, use_container_width=True)
