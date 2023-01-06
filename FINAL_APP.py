@@ -62,7 +62,7 @@ elif choose == 'ML':
         # Create DataFrame from multiple lists
 
 
-        df2=pd.DataFrame(list(zip(date,actual,prediction)),columns=['date','actual','prediction'])
+        df2=pd.DataFrame(list(zip(date,prediction)),columns=['date','prediction'])
         st.write(df2)
 
         #chart_data = pd.DataFrame(
@@ -94,7 +94,7 @@ elif choose == 'ML':
         #st.plotly_chart(line_fig, use_container_width=True)
 
 
-        df = pd.DataFrame({
+        df5 = pd.DataFrame({
           'date': ['12/23/2022','12/26/2022','12/27/2022','12/28/2022','12/29/2022','12/30/2022', '01/2/2023', '01/3/2023','01/4/2023','01/5/2023'],
            'Actual': [  82.79, 82.55, 82.73, 82.74,82.83,82.75,82.73,82.71,82.51,82.81],
                 'Prediction':[ 82.78, 82.65, 82.83, 82.736,82.758,82.717,82.745,82.774,82.641,82.765]
@@ -145,8 +145,8 @@ elif choose == 'ML':
         # Create DataFrame from multiple lists
 
 
-        df2=pd.DataFrame(list(zip(date,actual,prediction)),columns=['date','actual','prediction'])
-        st.write(df2)
+        df3=pd.DataFrame(list(zip(date,prediction)),columns=['date','prediction'])
+        st.write(df3)
 
         #chart_data = pd.DataFrame(
          #   np.random.randn(20, 3),
@@ -154,7 +154,7 @@ elif choose == 'ML':
 
         #st.line_chart(rows)
         line_fig = px.line(
-           df2,
+           df3,
            x="date",
            y=["actual", "prediction"],
            title="Actual Values vs Forecasted values",
@@ -177,7 +177,7 @@ elif choose == 'ML':
         #st.plotly_chart(line_fig, use_container_width=True)
 
 
-        df = pd.DataFrame({
+        df6 = pd.DataFrame({
           'date': ['12/23/2022','12/26/2022','12/27/2022','12/28/2022','12/29/2022','12/30/2022', '01/2/2023', '01/3/2023','01/4/2023','01/5/2023'],
            'Actual': [ 1.0714, 1.1035, 1.0728, 1.1008,1.0761,1.0802,1.0702,1.0436,1.0609,1.1203],
                 'Prediction':[ 1.0614, 1.0635, 1.0638, 1.0608,1.0661,1.0702,1.0662,1.0546,1.0599,1.0603]
@@ -227,8 +227,8 @@ elif choose == 'ML':
         # Create DataFrame from multiple lists
 
 
-        df2=pd.DataFrame(list(zip(date,actual,prediction)),columns=['date','actual','prediction'])
-        st.write(df2)
+        df4=pd.DataFrame(list(zip(date,prediction)),columns=['date','prediction'])
+        st.write(df4)
 
         #chart_data = pd.DataFrame(
          #   np.random.randn(20, 3),
@@ -236,7 +236,7 @@ elif choose == 'ML':
 
         #st.line_chart(rows)
         line_fig = px.line(
-           df2,
+           df4,
            x="date",
            y=["actual", "prediction"],
            title="Actual Values vs Forecasted values",
@@ -259,7 +259,7 @@ elif choose == 'ML':
         #st.plotly_chart(line_fig, use_container_width=True)
 
 
-        df = pd.DataFrame({
+        df7 = pd.DataFrame({
           'date': ['12/23/2022','12/26/2022','12/27/2022','12/28/2022','12/29/2022','12/30/2022', '01/2/2023', '01/3/2023','01/4/2023','01/5/2023'],
            'Actual': [ 1.3603, 1.3571, 1.3631, 1.3591,1.2946,1.3000,1.4072,1.3700,1.3482,1.3601],
                 'Prediction':[ 1.3598, 1.3583, 1.3522, 1.3608,1.3546,1.3549,1.3572,1.3669,1.3476,1.3503]
