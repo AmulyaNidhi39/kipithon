@@ -108,7 +108,7 @@ elif choose == 'ML':
             # Print results.
 
 
-        st.line_chart(df, x="date",
+        st.line_chart(df5, x="date",
            y=["Actual", "Prediction"])
 
     elif add_selectbox=='EURO-USD':
@@ -191,7 +191,7 @@ elif choose == 'ML':
             # Print results.
 
 
-        st.line_chart(df, x="date",
+        st.line_chart(df6, x="date",
            y=["Actual", "Prediction"])
     else:
          # Initialize connection.
@@ -273,7 +273,7 @@ elif choose == 'ML':
             # Print results.
 
 
-        st.line_chart(df, x="date",
+        st.line_chart(df7, x="date",
            y=["Actual", "Prediction"])
 elif choose == 'TABLEAU':
     def check_password():
