@@ -271,7 +271,7 @@ elif choose == 'TABLEAU':
                 with server.auth.sign_in(tableau_auth):
                     workbooks, pagination_item = server.workbooks.get()
                     for w in workbooks:
-                        if w.name == 'myworkbook':
+                        if w.name == 'myworkbook1':
                             our_workbook = w
                             break
             # Get views for BHARAT_REFINERY_DASHBOARD_FINAL workbook.
