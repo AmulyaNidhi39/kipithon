@@ -286,7 +286,7 @@ elif choose == 'TABLEAU':
                     view_image = our_view.image
                     return view_image
             view_image = run_query('Craig Dashboard')
-            st.image(view_image, width=1010, height=750)
+            st.image(view_image)
         elif st.session_state["username"] == 'Jhony':
             server_url = 'https://prod-apnortheast-a.online.tableau.com'
             user = 'panga.r.karthik@kipi.bi'
