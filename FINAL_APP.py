@@ -271,7 +271,7 @@ elif choose == 'TABLEAU':
                 with server.auth.sign_in(tableau_auth):
                     workbooks, pagination_item = server.workbooks.get()
                     for w in workbooks:
-                        if w.name == 'cj':
+                        if w.name == 'myworkbook':
                             our_workbook = w
                             break
             # Get views for BHARAT_REFINERY_DASHBOARD_FINAL workbook.
@@ -285,7 +285,7 @@ elif choose == 'TABLEAU':
                     server.views.populate_image(our_view)
                     view_image = our_view.image
                     return view_image
-            view_image = run_query('Craig Dashboard')
+            view_image = run_query('CDH')
             st.image(view_image, width=800)
         elif st.session_state["username"] == 'Jhony':
             server_url = 'https://prod-apnortheast-a.online.tableau.com/'
