@@ -262,7 +262,7 @@ elif choose == 'TABLEAU':
         tableau_auth = TSC.TableauAuth(username=user, password=password, site_id=site)
         server = TSC.Server(server_url, use_server_version=True)
         
-        if st.session_state["username","password"] == ['Craig','Craig123']:
+        if st.session_state["username","password"] == ["Craig","Craig123"]:
         
 
             # Get various data.
@@ -289,7 +289,7 @@ elif choose == 'TABLEAU':
                     return view_image
             view_image = run_query('CDH')
             st.image(view_image)
-        elif st.session_state["username","password"] == ['Jhony','Jhony123']:
+        elif st.session_state["username","password"] == ["Jhony","Jhony123"]:
             
 
             # Get various data.
