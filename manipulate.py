@@ -263,32 +263,34 @@ elif choose == 'TABLEAU':
         server = TSC.Server(server_url, use_server_version=True)
         
         if st.session_state["username"== ["Craig"]:
+                           
+                            
         
 
-            # Get various data.
-            # Explore the tableauserverclient library for more options.
-            # Uses st.experimental_memo to only rerun when the query changes or after 10 min.
-            @st.experimental_memo(ttl=1200)
-            def run_query(view_name):
-                with server.auth.sign_in(tableau_auth):
-                    workbooks, pagination_item = server.workbooks.get()
-                    for w in workbooks:
-                        if w.name == 'myworkbook4':
-                            our_workbook = w
-                            break
-            # Get views for BHARAT_REFINERY_DASHBOARD_FINAL workbook.
-                    server.workbooks.populate_views(our_workbook)
-                    for v in our_workbook.views:
-                        if view_name == v.name:
-                            our_view = v
-                            break
+                            # Get various data.
+                            # Explore the tableauserverclient library for more options.
+                            # Uses st.experimental_memo to only rerun when the query changes or after 10 min.
+                            @st.experimental_memo(ttl=1200)
+                            def run_query(view_name):
+                                with server.auth.sign_in(tableau_auth):
+                                    workbooks, pagination_item = server.workbooks.get()
+                                    for w in workbooks:
+                                        if w.name == 'myworkbook4':
+                                            our_workbook = w
+                                            break
+                            # Get views for BHARAT_REFINERY_DASHBOARD_FINAL workbook.
+                                    server.workbooks.populate_views(our_workbook)
+                                    for v in our_workbook.views:
+                                        if view_name == v.name:
+                                            our_view = v
+                                            break
 
-                #Get an image for the view.
-                    server.views.populate_image(our_view)
-                    view_image = our_view.image
-                    return view_image
-            view_image = run_query('CDH')
-            st.image(view_image)
+                                #Get an image for the view.
+                                    server.views.populate_image(our_view)
+                                    view_image = our_view.image
+                                    return view_image
+                            view_image = run_query('CDH')
+                            st.image(view_image)
         elif st.session_state["username" == ["Jhony"]:
             
 
