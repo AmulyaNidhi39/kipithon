@@ -320,4 +320,4 @@ elif choose == 'TABLEAU':
             view_image = run_query('JDH')
             st.image(view_image, width=800)
         else:
-            st.print("Bye!")
+            st.print("User not authorized!")
