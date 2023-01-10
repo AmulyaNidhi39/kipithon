@@ -257,7 +257,7 @@ elif choose == 'TABLEAU':
     if check_password():
      
         
-        if st.session_state["username"] == ["Craig"]:
+        if st.session_state["username"] == ['Craig']:
             server_url = 'https://prod-apnortheast-a.online.tableau.com'
             user = 'panga.r.karthik@kipi.bi'
             password = 'Kipithon@123'
@@ -294,7 +294,7 @@ elif choose == 'TABLEAU':
         
 
                          
-        elif st.session_state["username"] == ["Jhony"]:
+        elif st.session_state["username"] == ['Jhony']:
             server_url = 'https://prod-apnortheast-a.online.tableau.com'
             user = 'panga.r.karthik@kipi.bi'
             password = 'Kipithon@123'
