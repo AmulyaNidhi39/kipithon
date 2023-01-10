@@ -255,15 +255,15 @@ elif choose == 'TABLEAU':
             return True
     
     if check_password():
-        server_url = 'https://prod-apnortheast-a.online.tableau.com'
-        user = 'panga.r.karthik@kipi.bi'
-        password = 'Kipithon@123'
-        site = 'Site22'
-        tableau_auth = TSC.TableauAuth(username=user, password=password, site_id=site)
-        server = TSC.Server(server_url, use_server_version=True)
+     
         
         if st.session_state["username"] == ["Craig"]:
-            
+            server_url = 'https://prod-apnortheast-a.online.tableau.com'
+            user = 'panga.r.karthik@kipi.bi'
+            password = 'Kipithon@123'
+            site = 'Site22'
+            tableau_auth = TSC.TableauAuth(username=user, password=password, site_id=site)
+            server = TSC.Server(server_url, use_server_version=True)
 
             # Get various data.
             # Explore the tableauserverclient library for more options.
@@ -295,7 +295,12 @@ elif choose == 'TABLEAU':
 
                          
         elif st.session_state["username"] == ["Jhony"]:
-            
+            server_url = 'https://prod-apnortheast-a.online.tableau.com'
+            user = 'panga.r.karthik@kipi.bi'
+            password = 'Kipithon@123'
+            site = 'Site22'
+            tableau_auth = TSC.TableauAuth(username=user, password=password, site_id=site)
+            server = TSC.Server(server_url, use_server_version=True)
 
             # Get various data.
             # Explore the tableauserverclient library for more options.
